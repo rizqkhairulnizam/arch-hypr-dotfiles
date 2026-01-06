@@ -1,0 +1,42 @@
+arch-hypr-dotfiles/
+│
+├─ dotfiles/
+│  ├─ gtk-3.0/
+│  │  └─ settings.ini
+│  ├─ hypr/
+│  │  ├─ hyprland.conf
+│  │  └─ REQUIRED.md
+│  ├─ kitty/
+│  │  ├─ kitty.conf
+│  │  └─ custom.conf
+│  ├─ rofi/
+│  │  └─ config.rasi
+│  └─ waybar/
+│     ├─ config.jsonc
+│     ├─ style.css
+│     └─ REQUIRED.md
+│
+├─ screenshots/
+│  ├─ btop.png
+│  ├─ home.png
+│  ├─ neovim-lazyvim.png
+│  ├─ rmpc.png
+│  ├─ rofi-app-launcher.png
+│  ├─ vscode.png
+│  ├─ wlogout.png
+│  └─ yt-x.png
+│
+├─ wallpapers/
+│  ├─ flipper.png
+│  ├─ flipper_white.png
+│  ├─ flipper_white_cropped.png
+│  ├─ flipper_white_cropped1.png
+│  ├─ purple_city.jpg
+│  ├─ purple_city_edited.jpg
+│  └─ purple_city_white.png
+│  └─ wave.png
+│
+├─ journal.txt
+├─ packages.txt
+└─ README.md
+
