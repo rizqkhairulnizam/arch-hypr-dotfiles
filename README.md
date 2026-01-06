@@ -15,5 +15,8 @@ Extra stuff (wlogout, swaylock, hyprshot, etc) will be added later.
 I have included a very unhelpful, long journal-like text file (journal.txt) that contains my journey ricing this thing from a to z. I tried to make it reference-able by adding tags and a glossary at the very bottom.
 
 ## V2 - TBA
-I haven't planned for this yet lmao
-
+I haven't planned for this yet lmao BUT these are what i'm thinking
+- oh-my-zsh configs
+- wlogout
+- swaylock + swayidle
+- dmenu scripts (refine them somehow)
