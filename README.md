@@ -20,3 +20,6 @@ I haven't planned for this yet lmao BUT these are what i'm thinking
 - wlogout
 - swaylock + swayidle
 - dmenu scripts (refine them somehow)
+- hyprshot
+- hyprpaper
+- wl*
