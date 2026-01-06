@@ -3,18 +3,48 @@ arch-hypr-dotfiles/
 ├─ dotfiles/
 │  ├─ gtk-3.0/
 │  │  └─ settings.ini
+│  │
 │  ├─ hypr/
 │  │  ├─ hyprland.conf
-│  │  └─ REQUIRED.md
+│  │  ├─ REQUIRED.md
+│  │  └─ scripts/
+│  │     ├─ hypr-blur.sh
+│  │     ├─ hypr-idle.sh
+│  │     ├─ hypr-idletoggle.sh
+│  │     ├─ hypr-radius.sh
+│  │     ├─ hypr-style.sh
+│  │     └─ NOTES.md
+│  │
 │  ├─ kitty/
 │  │  ├─ kitty.conf
-│  │  └─ custom.conf
+│  │  ├─ custom.conf
+│  │  └─ scripts/
+│  │     ├─ kitty-cursor.sh
+│  │     ├─ kitty-style.sh
+│  │     └─ NOTES.md
+│  │
 │  ├─ rofi/
-│  │  └─ config.rasi
+│  │  ├─ config.rasi
+│  │  ├─ hypr-menu.rasi
+│  │  ├─ kitty-menu.rasi
+│  │  ├─ waybar-menu.rasi
+│  │  ├─ CUSTOM-DMENU.md
+│  │  └─ scripts/
+│  │     ├─ hypr-menu.sh
+│  │     ├─ kitty-menu.sh
+│  │     └─ waybar-menu.sh
+│  │
 │  └─ waybar/
 │     ├─ config.jsonc
 │     ├─ style.css
-│     └─ REQUIRED.md
+│     ├─ REQUIRED.md
+│     └─ scripts/
+│        ├─ waybar-hover.sh
+│        ├─ waybar-hover-toggle.sh
+│        ├─ waybar-pos.sh
+│        ├─ waybar-radius.sh
+│        ├─ reload.sh
+│        └─ NOTES.md
 │
 ├─ screenshots/
 │  ├─ btop.png
@@ -33,10 +63,11 @@ arch-hypr-dotfiles/
 │  ├─ flipper_white_cropped1.png
 │  ├─ purple_city.jpg
 │  ├─ purple_city_edited.jpg
-│  └─ purple_city_white.png
+│  ├─ purple_city_white.png
 │  └─ wave.png
 │
 ├─ journal.txt
 ├─ packages.txt
 └─ README.md
+
 

@@ -1,0 +1,90 @@
+* {
+    font: "JetBrains Mono 15";
+    spacing: 10px;
+    padding: 5px;
+
+    background-color: transparent;
+    fg: #FFFFFFFF;
+    fg-alt: #FFFFFF66;
+    bg: #000000AA;
+    bg-alt: #00000000;
+
+    hl-bg: #FFFFFFFF;
+    hl-fg: #000000FF;
+
+    radius: 8px;
+    border-color: #FFFFFFFF;
+}
+
+configuration {
+    modi: "dmenu";
+    show-icons: false;
+}
+
+window {
+    width: 900px;
+    background-color: #000000AA;
+    border: 2px solid;
+    border-color: #FFFFFFFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+mainbox {
+    spacing: @spacing;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    spacing: @spacing;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @fg;
+}
+
+entry {
+    text-color: @fg;
+    placeholder: "Input Opacity";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 4;
+    fixed-height: false;
+    scrollbar: false;
+}
+
+element {
+    padding: @padding;
+    border-radius: @radius;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: #FFFFFFFF;
+    background-color: transparent;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+}
+
+element-text normal.normal,
+element-text alternate.normal {
+    text-color: #FFFFFFFF;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: #FFFFFF;  // highlight background
+}
+
+element-text selected.normal,
+element-text selected.active {
+    text-color: #000000;        // text on highlight
+}
+
+

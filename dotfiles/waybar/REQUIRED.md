@@ -16,6 +16,8 @@ This configuration is for my Hyprland environment. Some are not needed as part o
 - kitty
 - wlogout
 - python
+- hyprctl
+- coreutils (sed, grep, pkill, kill)
 
 ## Fonts
 - Fira Code
@@ -23,14 +25,15 @@ This configuration is for my Hyprland environment. Some are not needed as part o
 - Font Awesome (otf-font-awesome)
 
 ## Custom Scripts Used
-- ~/.config/cava/wayves/wayves.py
-- ~/.config/bars/bars.sh
-- ~/.config/waybar/mediaplayer.py
+- ~/.config/cava/wayves/wayves.py (from jvc84/wayves)
 - ~/.config/rofi/hypr-menu.sh
 - ~/.config/rofi/kitty-menu.sh
 - ~/.config/rofi/waybar-menu.sh
 
+
 ## Optional
 - cava (audio visualizer backend)
 - lvsk-calendar (clock click action)
+- ~/.config/waybar/mediaplayer.py
+- ~/.config/bars/bars.sh
 

@@ -1,4 +1,4 @@
-# Hyprland – Requirements
+# Hyprland Requirements
 
 ## Core Packages
 - hyprland
@@ -13,7 +13,6 @@
 - swayidle
 - hyprpaper
 - hyprshot
-- wl-clipboard
 
 ## Input & Brightness
 - brightnessctl
