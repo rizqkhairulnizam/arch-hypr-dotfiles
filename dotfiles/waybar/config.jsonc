@@ -1,0 +1,255 @@
+// -*- mode: jsonc -*-
+{
+    "position": "top",
+    "spacing": 3,
+    "margin-top": 0,
+    "margin-bottom": 0,
+
+    /* =========================
+     * MODULE ORDERING
+     * ========================= */
+
+    "modules-left": [
+        "custom/power",
+        "custom/apps",
+        "group/appearance",
+        "group/system",
+        "temperature",
+        "hyprland/window",
+        "sway/scratchpad",
+        "hyprland/submap",
+        "custom/media",
+        "custom/bars"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "tray",
+        "custom/wayves",
+        "group/audiostation",
+        "network",
+        "power-profiles-daemon",
+        "keyboard-state",
+        "sway/language",
+        "battery",
+        "battery#bat2",
+        "clock"
+    ],
+
+    /* =========================
+     * GROUPS
+     * ========================= */
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": ["cpu", "memory", "disk"]
+    },
+
+    "group/appearance": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/hypr_style",
+            "custom/kitty_style",
+            "custom/waybar_style"
+        ]
+    },
+
+    "group/audiostation": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/wayves_left",
+            "pulseaudio",
+            "custom/wayves_right"
+        ]
+    },
+
+    /* =========================
+     * CORE MODULES
+     * ========================= */
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": " ",
+            "unlocked": " "
+        }
+    },
+
+    "hyprland/submap": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", " "],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "months": "<span color='#ffffff'><b>{}</b></span>",
+                "days": "<span color='#94dfff'><b>{}</b></span>",
+                "weekdays": "<span color='#7CD37C'><b>{}</b></span>",
+                "today": "<span color='#ffcc66'><b>{}</b></span>"
+            }
+        },
+        "on-click": "kitty -e lvsk-calendar"
+    },
+
+    "cpu": {
+        "format": "{usage}%  ",
+        "tooltip": false,
+        "on-click": "kitty -e btop"
+    },
+
+    "memory": {
+        "format": "{}%  ",
+        "on-click": "kitty -e btop"
+    },
+
+    "disk": {
+        "format": "{}%  ",
+        "on-click": "kitty -e btop"
+    },
+
+    "temperature": {
+        "critical-threshold": 90,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": [" ", "", " "],
+        "on-click": "kitty -e btop"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " ",
+            "default": " "
+        }
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%)   ",
+        "format-ethernet": "{ipaddr}/{cidr}   ",
+        "tooltip-format": "{ifname} via {gwaddr}   ",
+        "format-linked": "{ifname} (No IP)   ",
+        "format-disconnected": "Disconnected ⚠ ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol-qt"
+    },
+
+    /* =========================
+     * CUSTOM MODULES
+     * ========================= */
+
+    "custom/wayves_left": {
+        "format": "{}",
+        "exec": "python $HOME/.config/cava/wayves/wayves.py -o cava=left -i cava=left -a cava=left"
+    },
+
+    "custom/wayves_right": {
+        "format": "{}",
+        "exec": "python $HOME/.config/cava/wayves/wayves.py -o cava=right -i cava=right -a cava=right"
+    },
+
+    "custom/wayves": {
+        "format": "{}",
+        "exec": "python $HOME/.config/cava/wayves/wayves.py -o cat -i cat -a cat",
+        "on-scroll-up": "brightnessctl s 1%+",
+        "on-scroll-down": "brightnessctl s 1%-"
+    },
+
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": " ",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2>/dev/null"
+    },
+
+    "custom/bars": {
+        "exec": "stdbuf -oL $HOME/.config/bars/bars.sh",
+        "return-type": "plain",
+        "hide-empty-text": true
+    },
+
+    "custom/power": {
+        "format": " ",
+        "on-click": "wlogout"
+    },
+
+    "custom/apps": {
+        "format": " ",
+        "on-click": "rofi -show drun"
+    },
+
+    "custom/kitty_style": {
+        "format": "󰄛 ",
+        "on-click": "$HOME/.config/rofi/kitty-menu.sh"
+    },
+
+    "custom/hypr_style": {
+        "format": " ",
+        "on-click": "$HOME/.config/rofi/hypr-menu.sh"
+    },
+
+    "custom/waybar_style": {
+        "format": " ",
+        "on-click": "$HOME/.config/rofi/waybar-menu.sh"
+    }
+}
+

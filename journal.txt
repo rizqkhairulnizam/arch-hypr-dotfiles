@@ -1,0 +1,1586 @@
+﻿my 7-day journey towards a greater understanding of arch+hyprland
+(cant wait to unhealthily hyperfixate on this heck yeah!)
+
+to future self: 2025-04-30 20:03:02.541503907
+
+
+
+
+#################################################################
+=========================[LOGS + RECORDS]========================
+#################################################################
+
+
+Day 1
+-----
+Finally got this to run. 
+Messed around with partitions but finally got arch to boot.
+Trying to learn what i can do here because i need to get used to this interface.
+I am used to apps that work right out of the box. 
+Now,, how do i tweak the brightness lmao
+
+Funnily enough,, i've learnt how to tweak the 'feel' of the
+setup(colors,, transparency,, etc) but not brightness lol
+The wifi is currently down,, thats why i thought might as
+well tinker with hypr's config file. pretty cool.
+
+I need to wait for the network to be up and running
+to search up how-to's and hex codes for colors.
+I get it,, people like neon green and turqoise gradients BUT
+i'll probably go for a purple setup. maybe red idk.
+I have a presentation tomorrow so i might sleep early.
+It's currently 10:26 but i dont have wifi so im basically
+rotting lmao
+
+ALSO,, here are things i kinda wanna look into later:
+> waybar? what is that? is it that bar thingy at the top?
+> hex colors for borders
+> wallpaper cuz why not(and its currently just black)
+> neofetch ricing
+
+
+
+
+Day 2
+-----
+I finally got to change kitty's configs. I thought i messed up cuz 
+the config file was missing and ctrl+shift+f2 wasn't working BUT
+apparently i was doing the right thing by copying the 
+sample config file from the usr directory into /kitty. 
+What i needed to do after configuring that file is to close off all
+kitty terminals. THEN,, changes started to show. It weirded me out because 
+~/.config/kitty is the default path for kitty's configs. 
+
+Now whats left is to make my own config file for ease of customization(yeah wow)
+cuz the sample config file is a MESS. Plus,, you can make your own .conf file and just
+include that into the main config file. It's like an extension of the main config file from
+how i understand it. pretty cool.
+
+I did configured the hyprland config file on the colors and im not really happy
+with the colors i chose but i'll look into it later.
+Kinda wanna handle kitty first and see what i can do with the extended config file.
+
+Also added hyprpaper for wallpaper. Same wallpaper from my Windows11 setup cuz i think
+it fits right in. No regrets.
+
+So far, i leanrt a lot when it comes to config files. Starting to understand how they
+work but even with this much tweaking around i just know that theres more to it than
+all this because as i edit the .config files,, i could see variables and stuff that seem
+like presets and i wonder if we can change them as well(most probably).
+
+
+
+
+Day 3
+-----
+Configured A TON.
+Planning to add the status bar(waybar) today. We'll see how that goes. 
+Those look sick so i REALLY wanna try it out.
+
+WAYBAR IS DONE. looks sick. ascii art for neofetch next.
+
+
+
+
+Day 4
+-----
+Wrote a few things in the config files so that future me wont make
+the same mistake twice.
+I just finished tweaking my waybar yesterday and i got my ascii art
+done today! Doesnt look too bad but i may need to tweak the colors
+later,, havent figured out how to do that yet.
+
+Oh also,, i modified the .bashrc file so that when i open up
+a terminal window,, neofetch runs. Looks nice. 
+
+
+
+
+Day 5
+-----
+MY SETUP LOOKS INSANE
+Looks decent when compared to the others that i have seen BUT mine
+looks really personalized. Im happy :>
+
+I set up rofi as the app switcher/menu and customized that as well
+to make the look and feel of hyprland. I also did a ton of work on
+neofetch. I ADDED THOSE CUTE TYPED EMOJIS. im in love w them.
+
+I am trying to find those cool animation windows that people have
+set up but i cant seem to find them. I dont even know what theyre
+actually called lmao.
+
+Here are things i wanna work on later:
+> thunar (file manager)
+> those animating terminal windows (cool stuff)
+> add "apps" button on waybar
+
+ADDED THE APPS MENU BUTTON. HELL YEAH.
+now i need to find out what those animations are called.
+
+Update: its called ascii/cli animation :)
+
+cli animations:
+> cava (put in bar) 
+> matrix (learn how to autostart)
+> pipes (learn how to autostart)
+
+
+
+
+Day 6
+-----
+Focusing on trying to make cava show up on waybar. I know it's
+a simple error that i am overseeing becuase waybar loads up well.
+But i also want to group the system icons as well.
+
+to-do:
+> cava (put in bar, autostart) 
+> matrix (autostart)
+> pipes (download + autostart)
+> group system icons
+
+can't figure out how to make them run on start :(
+BUT i can still run the script which is weird
+
+ALSO I ADDED A PET CATTTTT AAARCGGGGGGGGGHHHHHH
+
+
+
+
+Day 7
+-----
+I still want to add a japanese keyboard. I have found another guide.
+Let's hope this one works.
+
+So here's an updated to-do list:
+> pipes.sh
+> thunar (file manager)
+> japanese input
+> power menu 
+
+
+
+
+８日
+ーー
+日本語のキーもうはいった！！！！うれしい！！！！とても大好きOWO
+
+今、pipesダウンロードしたいんだ。それに、パワーのボタンやthunarも
+セタプしたい。
+
+では、neofetchのステーたスも変（か）えた。これは新しい単語：
+
+概観（がいかん）overview
+状況（じょうきょう）status
+
+
+
+
+９日
+ーー
+今、アラビアの空港に着いた。
+クアラルンプールに帰るひこうきは六時間後だ。
+
+thunarをダウンロードしたい。thunarのドクス読んでる。
+では、むずかしくなさそうだと思う。よし！
+
+I have downloaded thunar and changed its theme. 
+It goes dark now :)
+
+The only thing left is a power menu and that should
+be it for my setup until further notice.
+There is more that I could add but that'll be it for now.
+
+
+
+This part of the journal will be random logs and it
+basically contains random findings and some progress.
+
+NMCLI ERROR FIX (kinda)
+	My home network couldnt be connected to by this host.
+	It kept giving me an error, 
+	802-11-wireless-security.key-mgmt:property is missing.
+	Archlinux Forum saved me, this one guy in particular.
+	They suggested adding "--ask" after writing the SSID.
+	Whats weird is that there was already a string,
+	could be the password, that was already there but
+        i cleared it and entered my password then boom. 
+	we're in :)
+	
+	Funny how help is really just from random strangers
+	having to go thru the same problem and giving us the 
+	fix we needed. Also, how did the guy find the fix. 
+	Blew my mind. 
+
+	行こう！
+
+
+Update: 
+  It has been a few days(months) since my last entry.
+	I have decided to log entries after a completed update.
+
+
+
+
+wlogout, swaylock and swayidle
+------------------------------
+Added these three. wlogout for the logout menu, swaylock is 
+screenlock for sway and swayidle is the automation used to
+autolock my device. Pretty neat. Always wanted to do it and 
+originally i thought it would be a sophisticated process but
+its not that bad lol
+
+One thing that was confusing was the config file for swaylock.
+Its not made automatically lmao so the system will just search
+for it. I searched everywhere for the sample config file but 
+couldnt find it haha
+
+Overall,, everything was great and it was fun!
+
+
+
+
+Bibata cursor
+-------------
+Changed the cursor! My god that was confusing too. It worked kinda
+fine until i fixed it. There are three different variations to
+Bibata: Amber, Classic and Ice. I configged it to Ice but it kept
+showing Amber. I deleted the cursor pack in /usr/share/icons and 
+the system reverted to Ice. My guess is that the cursors folder in
+defaults took in the wrong pack since it may have the same name.
+
+
+
+
+Kitty + OhMyZsh
+---------------
+Im making an entry here because aside from recording proud moments(haha),
+i also wanna let my future self know of the steps i take to make
+these changes cuz this one in particular will involve some shell changes
+and i DO NOT wanna forget how to do a rollback if i need it.
+
+i.	download zsh via pacman
+ii.	chsh -s /usr/bin/zsh
+iii. 	.zshrc 
+iv.	download ohmyzsh via curl
+v. 	config .zshrc file (themes and stuff)
+
+I edited a theme! It looks great! and HOLY SHT it was a lot of stuff
+happening at once. I learned about shell prompts and how to set them
+depending on what you use (bash, zsh, etc). Shell prompts are
+the texts that show up on the terminal. Usually its your username
+and hostname. You edit it in your .shrc file (.bashrc / .zshrc).
+
+Those files are the default files and dont have a lot of boilerplate 
+stuff so you are able to do simple stuff when editing your shell
+prompt. BUT THE THERES OHMYZSH.
+
+SO from what I understand, ohmyzsh is a way for you to customize your
+shell to the max. Its only for terminals that run zsh. I like how
+when you install oh my zsh, the program would create a rollback
+.zshrc file for you under another name(.zshrc.pre-oh-my-zsh) because 
+it would populate the original one. In order for me to let neofetch 
+run after opening a terminal window, i had to put in the stuff i had
+in the old .bashrc and .zshrc files. The old files are still there.
+
+What's cool about oh my zsh is that you can choose what themes you
+want! It comes pre-installed with a bunch. You only need to set it up
+and specify your theme by name in the .zshrc file. There was one 
+theme in particular that stood out to me because of the overhead lines
+it had which i thought was pretty cool. I chose it and the colors
+were kinda annoying so i thought i should change it. Apparently,
+ohmyzsh had prepared a custom folder for custom themes. That's where
+you store your custom themes. What i did was i copied the original and
+pasted it into the custom folder and edit it from there.
+
+So i originally thought, "hey ive messed around with stylesheets and
+configs before, i think im good". NOPE. 
+
+For future reference, this is what i had to deal with:
+
+# Finally, the prompt.
+PROMPT='${PR_SET_CHARSET}${PR_STITLE}${(e)PR_TITLEBAR}\
+${PR_WHITE}${PR_ULCORNER}${PR_HBAR}${PR_WHITE}[\
+${PR_CYAN}%${PR_PWDLEN}<...<%~%<<\
+${PR_WHITE}]$(virtualenv_prompt_info)$(ruby_prompt_info)$(conda_prompt_i>
+${PR_CYAN}%(!.%SROOT%s.%n)${PR_WHITE}@${PR_CYAN}%m\
+${PR_WHITE}]${PR_WHITE}${PR_HBAR}${PR_URCORNER}\
+
+${PR_WHITE}${PR_LLCORNER}${PR_WHITE}${PR_HBAR}${PR_WHITE}<\
+${PR_WHITE}%D{%H:%M:%S}\
+${PR_WHITE}%{$reset_color%}$(git_prompt_info)$(git_prompt_status)${PR_WH>
+${PR_NO_COLOUR} ${PR_WHITE}# '
+
+# display exitcode on the right when > 0
+return_code="%(?..%{$fg[red]%}%? ↵ %{$reset_color%})"
+RPROMPT=' $return_code\
+${PR_WHITE}<${PR_WHITE}%D{%a,%b%d}${PR_WHITE}>${PR_WHITE}${PR_HBAR}${PR_>
+
+PS2='${PR_WHITE}${PR_HBAR}\
+${PR_WHITE}${PR_HBAR}(\
+${PR_WHITE}%_${PR_WHITE})${PR_HBAR}\
+${PR_WHITE}${PR_HBAR}${PR_NO_COLOUR} '
+
+
+${XYZ} is just a placeholder for something. It could be the lines that
+the author added in or the colors that would color the texts. Thats
+pretty much it. Everything else is shell lingo.
+
+:))))))))
+
+
+was it fun? yes. did i learn a lot? definitely. but was it confusing
+af? oh very. All in all, didnt regret setting it up. Kitty looks
+amazing now :D
+
+Shout out to jonathan for making a really cool theme!
+
+
+
+
+cube-ascii + alias
+------------------
+Got to install a cube art! Its one of those 3d cube models. Looks
+incredible. I also learned about aliases. They are commands that 
+your shell/terminal understands. Those are edited in your .zshrc/.bashrc 
+file. 
+
+Downloading and "building" the cube was an experience in itself. i needed
+to use build and cmake. i'll be learning more of them but from my
+understanding, cmake is a build system generator and build makes sure
+you turn your code into a program your computer can run. Pretty neat. 
+
+The setup looks almost complete and i'm glad to say that it looks like
+how i envisioned it to be earlier this year. I am so glad i jumped into
+this rabbit hole. This is another instance in my life where i have  found
+something I am passionate for, among my other deeper interests in tech.
+
+Shout out to Im-Rises, the author of the git repo for the cube art.
+
+
+
+
+Cube update + runtime-configurability (CL args OR CLI options/flags)
+---------------------------------------------------------------
+danieldotwav made a repo with a cube animation program that lets me
+tweak a few things around easily. okay it wasnt easy easy but less
+stuff to think about compared to the other cube. for this one, i had
+to tweak 2 files: Source.c (main file) and Constants.h which is the
+file with constants.
+
+Aside from understanding how the cube's speed is controlled, i learned
+how to compile c programs using gcc and how to make a c program have 
+their own CL arguments/options/flags. I have always wondered how these
+tool-makers make their programs with a bunch of options. As a guy in
+security, i have dealt with tools like nmap, metasploit, johntheripper 
+and they would always have tons of options to go with their commands.
+Maybe they do it differently than me (considering how they need to code
+with short runtimes) but i got to figure out how it works under the hood.
+This was a fulfilling learning experience. 
+
+
+
+
+SCRATCHPAD & SPECIAL WORKPLACE DISCOVERY (WHAAAAAT)
+----------------------------------------
+So i was trying to add keybinds for wlogout and update/re-learn the
+ones that were already there. I changed the psuedo keybind from
+mainMod + P to mainMod + S. It was acting weird because it was
+psuedo-ing the windows and then it froze them, until i do it again.
+I tried checking the config file to see if there are 2 keybinds using
+the S key. 
+
+Found it. I stumbled upon "special workspace" in the keybindings section
+that was using the S key so i thought, "okay so this is being toggled 
+after i psuedo-ed the tiles". i then tried mainMod + shift + S and BOOM.
+It's as if the window became a ghost. Every other window is there, but i
+can only use the window that was brought into this weird ghost mode. I
+experimented with it by bringing in other window panels into this mode.
+I quickly realized the system treats this workspace differently, where
+it goes away after the keybind gets triggered. It can reappear on other
+workspaces as soon as i switch in and out between them. This ghost
+workspace just pops up anywhere i want it to. Reading the keybinds,
+theres another name for this thing, 'Scratchpad'. 
+
+The name is familiar because it came up several times when I was editing
+and configuring my waybar ages ago. Putting the name aside, i then 
+figured out how to bring window panels from scratchpad into the normal
+workspaces. Apparently, just do it like the normal ones, mainMod + shift
++ 1-9. This will bring windows from scratchpad into whichever
+workspace you choose(1 to 9).
+
+Currently, im curious as to what kind of widget/panel will show up if
+i were to add/edit it on waybar...  
+
+update: yeah okay so apparently the scratchpad module on waybar is only
+for wayland and not hyprland. There is simply no module for the scratchpad.
+I dont know what i was expecting but it would be cool to have a scratchpad
+module that would act like the workspace module but gets toggled on and
+replace the normal workspace module for a scratchpad one. That would be
+pretty cool.
+
+
+
+
+yazi + neovim(lazyvim) + btop
+--------------------
+
+SO... i stumbled upon a rice vid that was 8 minutes long AND it had a
+ton of cool programs installed.
+
+Yazi is a fast terminal-based file manager written in Rust. It's nice
+because it fits into the setup i have and it has a preview layout (like
+finder on macs). Neovim is just another fork of vim(text editor),, but more
+user-friendly,, modern and extensible. Btop is a task manager,, because
+i just realized i dont have one lmao
+
+update: HOLY SHT. neovim + lazyvim is crazy. Loving it. I downloaded
+        the jetbrains mono font to make it look better. I have to admit,
+        it doessssss
+
+        I thought i would keep the default monospace font but i changed
+        my mind hahahahaha as someone who learned programming thru 
+        pycharm and intelliJ,, i'm loving this.
+
+        大好きだよ！
+
+With neovim,, i need to learn how to get used to this. Im used to nano
+and it may take me a while to get used to this one. Totally worth it thooo
+and btop is cool too! looks so cool! im really living that sci-fi life that
+i once dreamt of when i was a kid. This is insane.
+
+NEXT:
+-> config yazi,, BTOP if possible and lazyvim!
+
+UPDATE:
+  configged them! loving the presets. I dont think im ready for 
+  manually configuring themes but i want to look into that soon.
+  i kinda want to look into other "widgets" or applications like
+  music players and calender (definitely along with nmgui/cli).
+  ALSO! jp2a is an amazing tool to turn stuff into ascii art.
+
+
+
+
+RMPC
+----
+
+INTO MUSIC. Theres so much going on. HOLY SHT.
+
+SO:
+
+1) I learned about how metadata is managed! ID3 tags are metadata
+embedded inside MP3 files. They act as a "tag" so that systems
+/media players know the details of the mp3 file (title,, artists,,
+etc). We have programs that can help with reading and writing
+these tags. The one i used was eyeD3. eyeD3 allows me to alter and
+manage id3 tags of a mp3 files. Pretty cool! Thats how rmpc reads
+song titles and singer names.
+
+2) CAVA WORKS! apparently,, it needs FIFO. FIFO is a named pipe.
+No audio is played thru FIFO and it is only used for
+visualization. The reason why FIFO is used is because it is a raw
+PCM stream which is what cava expects. Pulse/Pipewire mixes audio
+which makes it harder to visualize cleanly. FIFO visualizes it
+more accurately with lower latency for visualizers like cava.
+
+The question now is... will i continue to add more songs?
+definitely. Will it be a pain in the ass? Definitely. I can only
+imagine how i need to rename downloaded songs and then retagging
+them... ohhhh boyyy
+
+I think this is the perfect time to get used to yazi and its
+shortcuts.
+
+
+
+
+YT-X
+---- 
+
+smth in the middle of this rofi menu project,, a TUI yt client!
+COOL! now i can watch youtube on terminal jdhskdjfhksdf
+
+something i learned is how i need to config the theme by using
+fzf. fzf is a terminal-based fuzzy finder. From the pov of a
+general use case,, fzf shows a list on your terminal and lets
+you filter by typing what you want. What yt-x is doing is that
+it asks me to styl fzf BUT this styling only applies to yt-x via
+"YT_X_FZF_OPTS" which means, "hey these fzf opts are only for
+yt-x". new stuff,, pretty cool. 
+
+i personally might not use it but its hella cool and it works
+flawlessly hahhahaha the creator did a good job at developing
+it,, i may find myself using it when im just bored.
+
+
+
+
+lyrics for RMPC
+--------------- 
+OKAY SO- funny story. i wanted to try adding lyrics for a song
+i added into my library. its otuka's new one, "too much". unc
+finally dropped it MY GOD THAT TOOK AGES (love ya bro).
+
+i used this .lrc generator to help me make the lyric file.
+complete with adding the artist name and title of the song.
+lifesaver because i cant imagine doing all that timestamping
+myself ;-;
+
+when you have an lrc file,, it needs to have tags:
+  [ar:...] // artist - NEEDED for matching
+  [ti:...] // title - NEEDED for matching
+  [al:...] // album
+  [au:...] // author/lyricist
+  [length:mm:ss] // length - helps with matching
+  [offset:-mili] // adjustment offset in ms 
+
+these tags are used to match lrc files to their respective songs.
+this is where we see the use of those id3 tags on mp3 files.
+
+NOW,, when you want rmpc to load the lyrics to a song,, u need
+to declare and configure the lyrics_dir path. i declared it in 
+mpd.conf instead of config.ron in .config/rmpc. so it took me
+a while to realize whats wrong with it. sad part is that i spent
+a long while going back and forth with chat. Chat(GPT) explained
+it as if its me who didnt set the directories right T^T
+
+directory location/path dont matter. its just that you are meant 
+to add a config command into config.ron in your rmpc directory
+instead of mpd.conf. the lyrics are irrelevant to mpd. its an
+rmpc thing.
+
+
+
+
+MPD playlists
+------------- 
+
+i figured out how to make playlists and add to them!
+
+mpd uses .m3u files. these files denote the playlist itself.
+its basically a file that contains the list of songs you want
+to be in that playlist. for example: cyberpunk.m3u is basically
+by "cyberpunk" playlist and in that .m3u file is a list of .mp3
+files that are in that playlist (ie. Breathtaking Mix.mp3,, ...)
+
+I was wondering about it because the only way for me to have
+"playlists" before was to tag my songs with custom albums lol
+looks like i'll be refractoring them and as for newer songs,,
+i'll be adding them according to the album of their artists 
+and then add them into whatever playlist i want. PRETTY COOL.
+
+ところで、全部は日本語でできる！id3のタグや歌詞(かし)もできるよ。
+嬉しい〜 OvO
+
+
+
+
+wf-recorder
+-----------
+今日は、僕wf-recorderダウンロードした。今、モニター画面（がめん）
+録画（ろくが）できる！そのアプリ実行（じっこう）するスクリプトも
+作って、それはrecord.shだよ。そのスクリプトが簡単だと思う。後で、
+OBSもドウンロドしょうと思ってるんだけど、それが要る？wf-recorder
+が足りるとおもうよ。僕のset-up変えますように！
+
+あー
+とことで、hyprshotのアプリについては書かれなかった。hyprshotは
+画面の写真を撮れるアプリだよ。とってもべんりだ！せてきなプログ
+ラムだと思う。
+
+
+
+
+mapscii
+------- 
+ok this is cool. its basically a map in ASCII. amazing TUI
+program. it runs locally too! creds to rastapasta for this 
+amazing renderer. i want to look into more of tui/terminal
+apps(?) 
+
+
+
+
+################################################################
+=======================[PROJECT THREADS]========================
+################################################################
+
+HEY HEY so the rofi dmenu project has been taking a lotta lines 
+SO im gonna have a thread here just for that. happy scrolling :>
+i MAY use this section for other project threads
+
+
+CUSTOMIZING ROFI DMENU 
+----------------------
+
+Okay i have an idea! Why dont i make a button UI on rofi so that
+i can change how hyprland and kitty look? Heres how i want it to 
+be:
+
+when i launch rofi (SUPER + A),, i would have a menu on the side
+or bottom that has options to change hyprland and kitty configs.
+
+for kitty,, the buttons will change bg_opacity based on 4
+different presets:
+  solid 1.0
+  base 0.7
+  clear 0.4
+  glass 0.0
+
+i MAY put in a text input to just adjust opacity based on a value.
+i already made a script that takes in a value so that it can change
+my custom.conf file and then reload kitty.conf. All i need now is 
+to wire it up to rofi... somehow. I have seen people do it. As in,,
+they add images and their own buttons/menus so i know its possible.
+
+NEXT,, hyprland.conf. This may be easier since theres only one file
+to work with BUT there will be a problem with writing the script
+itself because the text i need to find and replace may have 
+duplicates BUT thats a problem ill have to face anyway. With
+hyprland,, since its system wide,, it will be more extensive (by 
+just one more option lol). I plan to add:
+  a yes/no blurring effect
+  opacity control:
+    static 0.8
+    transparent 0.4
+    watermark 0.2 
+    phantom 0.0 
+
+opacity control would be for inactive windows ONLY because they
+"flicker" when i hover over them (making them "active"). i MAY add
+a menu for active windows but i thought that would be unnecessary 
+since there will always be 1 active window,, but i might add it 
+anyway since it will make it easier for me to change them later
+if i want to.
+
+Since i have completed the script to chnage kitty's configs,,
+i'll work on rofi's ui. this may be the most practical custom
+change ive done onto my system apart from adding buttons onto
+waybar and making them clickable lmao. im excited.
+
+
+UPDATE_1: basic scripts done!
+  I MADE 3 SCRIPTS!
+  kitty-style.sh - for kitty terminal bg opacity tweak
+  hypr-style.sh - for inactive window opacity tweak  
+  hypr-blur.sh - turn blur on/off
+
+  The scripts are in their respective config directories.
+
+  there is only one param for all the scripts. The style shell
+  scripts need a decimal number (0.0 to 1.0) to set the opacity 
+  and then the blur script uses 0 or 1 for false or true.
+
+  Issues have been resolved and they work really well now. 
+
+The challenge now is to find a way to plug it into rofi... or 
+maybe another button on my waybar? I looked into rofi and made
+a shell script that opens up another mode of rofi(?) 
+
+I'm still looking into other options.
+
+
+UPDATE_2: tutorial vids found
+  i found videos on how to set rofi up so that we can config
+  our own menus! imma look into it cuz it looks like its what
+  i need atm. 
+
+
+UPDATE_3: APPEARANCE MODULES DONE
+  I GOT IT TO RUN. I GOT IT TO ACTUALLY RUN. BOTH HYPRLAND AND
+  KITTY CONFIG MODULES ON ROFI. HOLY SHT THIS IS AMAZING.
+
+  heres the flow (from user pov):
+    waybar button/module
+    |
+    rofi dmenu pops up 
+    |
+    select option OR enter decimal number for accurate setting
+    |
+    change takes place 
+
+  heres the flow from a technical perspective:
+    
+    these are the files:
+      
+      rofi/ 
+      // these are our menu scripts (responsible for the 
+      rofi window) 
+        kitty-menu.sh 
+        kitty-menu.rasi
+        hypr-menu.sh 
+        hypr-menu.rasi
+
+      hypr/
+      // these are the scripts that will manipulate our 
+      hyprland.conf file
+        hypr-blur.sh   //toggles blur
+        hypr-style.sh  //takes in a decimal 0.0 - 1.0
+
+      kitty/
+      // this file manipulates our custom.conf file and then
+      restarts our main config file.
+        kitty-style.sh //takes in a decimal 0.0 - 1.0
+
+    THE FLOW
+    --------
+
+    waybar: 
+      i added 2 custom modules: custom/kitty_style,
+                                custom/hypr_style
+      i grouped them under "appearance"
+      i gave them their icons (may change later) and have them
+      run on-click. this will call for the rofi dmenu sh scripts.
+      one module for kitty-menu.sh and one for hypr-menu.sh.
+      these will invoke rofi menu sh scripts.
+
+    rofi dmenu:
+      this is what makes it possible to have a menu for any
+      custom script. dmenu (from my understanding) is an option
+      to run rofi with our own configurations,, typical 
+      boilerplate stuff and what you need is your menu sh script
+      and an accompanying .rasi file to theme the menu.
+      
+      ie: kitty-menu.sh will run the actual scripts with inputs
+          (rofi dmenu + .rasi + input + styling scripts)
+          kitty-menu.rasi will have the colors and stuff 
+          (like css)
+      
+      this menu will then parse whatever we choose OR type in
+      into the menu. the menu listens/inputs what we type in 
+      as a variable,, the same why it would record the options
+      into the same variable. basically, whatever we type in 
+      or whatever we choose will be into the same variable
+      because the output of the command that runs is assigned 
+      to that variable ($MODE).
+
+      The script does include an if-else statement. it will first
+      check if the input is a decimal value. If else,, it will
+      jump to a switch where the cases would be of the option 
+      strings.
+      
+      IF we choose from listed options:
+        it will jump to a switch. remember java? :)
+        ie: kitty has 4 option to choose from. lets say i take
+            "solid". in the sh script of the menu, solid will be
+            recorded into the MODE variable.
+
+            after checks and verifications,, it will head to the
+            switch(cases) in that script. it will invoke the case
+            labeled under "solid". this will then run the
+            kitty-style.sh along with a preset param corresponding
+            to what "solid" is. in this case,, solid is an
+            opacity of 1.0. 
+
+            if nothing gets selected,, it will just exit.
+
+      IF we choose to enter an input (decimal):
+        it will take in our number and assign it to the MODE
+        variable. 
+        ie: if we put in 0.5,, the menu script will parse that
+            into the MODE variable and then MODE will be plugged
+            in as a param used with the kitty-style shell script 
+            to actually make the change.
+
+            if nothing gets selected,, it will exit.
+
+      FOR hypr-menu:
+        there is an option to "TOGGLE BLUR". this is smth
+        different than the styling script explained above.
+        more on this down there.
+
+    styling scripts:
+      after we have selected from options or input a value from
+      the dmenu window,, the dmenu script will run our styling
+      scripts (hypr-style.sh, hypr-blur.sh and kitty-style.sh).
+      these files are the scripts that will actually make the
+      changes that we have given as input to dmenu.
+
+      *-style.sh:
+        both hypr and kitty style sh scripts take a decimal
+        value as a param ($OPACITY) and then plugs it into the 
+        corresponding config file.
+
+        it will first verify the value and then runs sed to 
+        find what's needed to be parsed in and replace it with
+        our param.
+
+        for kitty-style.sh,, it will attempt to restart kitty
+        instances so that the change will be taken in
+        immediately. hypr-style.sh does not need to run a restart
+        command since changes take place instantly by default.
+
+      hypr-blur.sh:
+        this one is only for hypr/ since affects are similar
+        across both kitty and hyprland. Plus,, this will be
+        system wide.
+
+        it is a sh script that runs without a parameter. its job
+        is to toggle between true and false for the blurring
+        effect of all windows on this system,, not just kitty.
+
+        it will first parse in the current ($CURRENT) status
+        of the blur effect and then with an if-else statement,,
+        it will determine what should the new ($NEW) value be.
+        Finally,, it will then put it into the config line via a 
+        predefined line number ($LINE_NUMBER). i have not figured
+        out how to do this dynamically where it would work
+        even after i change stuff in the conf file for hyprland.
+    
+  Thats about it. it was a journey. there have been issues with
+  kitty and how sometimes it doesnt make the chnages instantly.
+  i want to understand as to why that happens. its not that its
+  broken but its annoying when youve change the opacity but you
+  need to open another terminal to see the changes. the modules
+  and scripts work,, but i need to figure out how to make it
+  flawlessly run everytime i restart my laptop cuz sometimes it 
+  does an immediate change and sometimes it doesnt but the config
+  file has been manipulated. small issue but its bothering me lol
+
+This is probably (definitely) the longest change log ive written
+HAHHAHAHAHHAHAH
+
+its obvious i had a ton of fun and learned a lot. i am more eager 
+to see what else i can do here. 
+
+UPDATE_4: "dmenu" heading/prompt changed to icon 
+  SO,, changes take place immediately now for some reason. ALSO,,
+  i figured how to change the prompt heading cuz its been showing
+  "dmenu" as the headers and thats been annoying as well.
+
+  SHOUT OUT to ericmurphyxyz. For parts of the menu setup,, he
+  gave a brief walkthrough of dmenu and how we can make our own.
+  i saw that he included "-p" followed by a string which is the
+  "header" (at least i call it a header) or the prompt (im 
+  guessing thats what option p is). pretty nice since its an easy
+  tweak. i was scared that it was the .rasi file lol
+
+also also,, learnt about glyphs. those are the icons that are used
+on this system. you can mainly see it on waybar and in conf files.
+
+
+UPDATE_5: kitty terminal cursor shape
+  its getting to me... i have another idea i wanna add :>
+
+  this time,, it will change the cursor shape of kitty terminal.
+  i'll need to make a script for that but it will use the same
+  menu,, sharing it with the dmenu for kitty's opacity.
+
+  this is how the file line-up looks like now:
+
+  rofi/
+    kitty-menu.sh 
+    kitty-menu.rasi
+    hypr-menu.sh 
+    hypr-menu.rasi
+
+  hypr/
+    hypr-blur.sh
+    hypr-style.sh
+
+  kitty/
+    kitty-style.sh
+    +ADDED: kitty-cursor.sh //options: block,, beam,, underline
+
+  kitty-menu.sh will take in $MODE from dmenu (in option/preset
+  form) and plug it into a switch. The switch will then run
+  kitty-cursor.sh appending $MODE at the end as a param,, based 
+  on the chosen option (ie. CURSOR BLOCK,, BEAM,, UNDERLINE)
+
+  kitty-cursor.sh takes param in ($CURSOR) and then finds
+  cursor_shape and replaces the current cursor shape with the
+  parameter. since its kitty,, it will only manipulate 
+  custom.conf.
+
+its working! i'll focus on other stuff for now since ive been
+focusing on rofi stuff for a while. this is one of those 
+practical changes ive made onto the system and im really happy.
+
+UPDATE_6: rounding corners + waybar menu
+  hey... would it be cool to have an option to toggle between 
+  sharp and rounded corners? :>
+
+  these options will allow me to change between a more rounded
+  or boxy setup. this will have to alter the css file to waybar.
+  the script will need to be a part of the hypr dmenu script 
+  fi- wait a second... I HAVE TO MAKE ANOTHER MENU FOR WAYBAR TOO!
+
+  this is how the file line-up looks like now:
+
+  rofi/
+    +ADDED: waybar-menu.sh 
+    +ADDED: waybar-menu.rasi
+    kitty-menu.sh 
+    kitty-menu.rasi
+    +EDITED: hypr-menu.sh //added rounding toggle 
+    hypr-menu.rasi
+
+  hypr/
+    +ADDED: hypr-radius.sh //TOGGLE RADIUS between sharp/rounded 
+    +EDITED: hypr-blur.sh //used awk instead of sed
+    hypr-style.sh
+
+  kitty/
+    kitty-style.sh
+    kitty-cursor.sh 
+
+  waybar/
+    +ADDED: waybar-radius.sh  //CHANGE RADIUS:
+                                squared/rounded/circular 
+
+  newly added stuff in rofi dir. are just boilerplate files
+  for the new waybar menu, similar to the other ones. only 
+  little tweaks were made.
+
+  waybar-radius.sh will take in an integer value ($NEW_VALUE) 
+  and puts it into waybar's style.css,, replacing whatever 
+  value in "border-radius". waybar then reloads so that changes
+  are loaded and visible.
+  
+  hypr-radius.sh does not take any param. when run,, it accesses
+  the conf file and finds the "decoration" block and searches 
+  for "rounding = " then toggles the value between 0 and 10. i 
+  used awk because i couldnt seem to get sed to work for what
+  i want. the challenge was to find the specific "rounding"
+  term so i had to first find the decoration block. this method
+  was used to change my hypr-blur.sh script as well so that it 
+  becomes dynamic instead of hard coding the line number in. more
+  on that below.
+
+  hypr-blur.sh got updated! it can finally toggle the blur effect
+  dynamically via awk instead of sed. before this,, i had to hard
+  code the line number for the "enabled" setting in the blur 
+  block. hardcoded it because there are several "enabled" 
+  instances so i had to be specific about what needed to be 
+  changed. that is how sed is used (at least from what i know).
+  with awk,, the script can focus on a specific block 
+  (in this case,, blur{...}) and then make changes within that
+  block. i dont need to worry about it changing other blocks that
+  may have "enabled" in them. the same thing was applied to 
+  hypr-radius.sh
+
+works as expected! this thread is expected to expand since i
+have one more addition i plan to add...
+
+
+UPDATE_7: waybar hover + toggle + other streamlined changes!
+  i figured i could add a feature that lets waybar appear only
+  when i hover my cursor around the top part of my screen. i then
+  added another script that could toggle that on and off.
+
+  this feature required some files to be changed as well while it 
+  gave way for other files to be touched up. more on this later.
+  
+  heres the lineup:
+
+  rofi/
+    +EDITED: waybar-menu.sh    //TOGGLE HOVER
+    waybar-menu.rasi
+    kitty-menu.sh 
+    kitty-menu.rasi
+    hypr-menu.sh
+    hypr-menu.rasi
+
+  hypr/
+    hypr-radius.sh 
+    hypr-blur.sh 
+    hypr-style.sh
+
+  kitty/
+    kitty-style.sh
+    kitty-cursor.sh 
+
+  waybar/
+    +EDITED: waybar-radius.sh  //added logic for when waybar needs
+                                 to be reloaded
+    +ADDED: waybar-hover-toggle.sh  //toggles between hover 
+                                      feature
+
+  waybar-menu.sh was edited to make room for the toggle feature
+  to be a part of the menu options. this option will run the
+  waybar-hover-toggle.sh script.
+
+  waybar-hover.sh is a script that runs on startup via exec-once
+  on the config file,, so im ditching the launch.sh script and
+  replaced it with this one. this means that waybar will have the
+  hover feature by default on startup. the "hover" features just
+  means that i need to hover my mouse around the top of my
+  monitor (Y=30,, can be changed if needed ofc) to let it appear
+  and waybar hides itself as soon as i move my cursor away from
+  that top region. this script contains a loop that runs 
+  continuously. before the loop ends,, there is an interval set
+  so that there is a set delay before the loop loops back.
+
+    this is when i learned about pid locking/pid file guard. it
+    is a technique in unix used to make sure that only 1 instance
+    of a script is running using the unique process id (pid)
+    generated by that sh process. in the sh script,, a few lines
+    of script were added to make up the lock. the first line
+    stores the path to the pid file into a variable ($PIDFILE).
+    then,, the script checks if the pid file exists. if the file
+    exists,, the script exits. if it doesnt,, the script
+    continues to run. that was the important part because that
+    logic block ensures that the script doesnt run when there is
+    already an instance of that specific script. but then where
+    does the pid file initialize itself to begin with? after that
+    logic block and assuming there is no running instance and pid
+    file,, the script continues to run. the next line echoes the
+    pid number into that file that we have put into PIDFILE. so
+    PIDFILE acts as a marker that says "hey! this thing is
+    running because i exist!" because it contains the pid number
+    that got generated by the system that belongs to that script.
+    oooookay this may not be the best explanation but i hope that
+    made sense fkdjhgfkjhgfkj
+
+    i needed to add this because i planned to replace this script
+    with the launch.sh script i made ages ago and that is bounded
+    into my keybinds. when i used this script without the pid
+    lock,, it spawned duplicated instances of waybar so this
+    locking mechanism solved that issue.
+
+  waybar-hover-toggle.sh is made to toggle between on/off for 
+  the hover feature. it would first set $PIDFILE as the pid file 
+  directory for waybar-hover.sh so that it knows if 
+  waybar-hover.sh is running or not. then comes the logic block,,
+  an if-else statement that checks for that running 
+  waybar-hover.sh process. 
+    
+    IF hover is running: it kills the running instance by
+    reading the pid content (which is basically the pid number of
+    that running hover script) and then removing the pid file
+    itself. and then it kills any running instance of waybar then
+    finally running an instance of waybar that will remain static
+    on my desktop view. 
+
+    IF hover is NOT running: it will kill any running instance 
+    of waybar and then launches the hover script.
+
+  waybar-radius.sh needed some changes due to this new mechanism.
+  the way waybar-radius.sh worked was the script manipulates the 
+  css file and then "reloads" via the old launch.sh file.
+  reloading just means killing all waybar processes and then
+  rerunning waybar with the c and s options. im afraid this will
+  mess with the flow of the newly added scripts so i changed the 
+  reloading process in this one. i initialized the pid file into
+  $PIDFILE and then used the logic if-else statement from the
+  toggle sh script but this time,, what i wanted was just a 
+  refresh and not a toggle. so i flipped the logic used.
+
+    IF hover is running: kill the script process and delete the 
+    pid file and then run back the hover script. 
+
+    IF hover is NOT running: then kill any instance of waybar 
+    and then rerunning waybar with the c and s options.
+
+    these were done so that after the styling option gets chosen,,
+    waybar's behaviour stays the same. ie, if it was on hover 
+    mode,, itll reload and stay in hover mode and if its in 
+    static mode,, it stays on static mode. without this,, it 
+    would be fine if im already on static mode but it will be 
+    annoying if im on hover mode since it will overwrite hover 
+    mode and make it static since the old launch script only 
+    does static waybar.
+
+    OTHER: hyprland.conf
+      i had to change this one cuz the old SUPER + SHIFT + W
+      keybind was used to run the launch.sh file. now its 
+      SUPER + W to run the waybar-hover-toggle script. but then
+      now im questioning if i should keep that toggle menu on 
+      dmenu or not cuz its redundant lol. ORRRR i could just make
+      another script that has that reload logic from the 
+      waybar style sh script.
+
+      update: yeah im definitely making a script for that.
+              reload.sh!
+
+yeah i think this wraps up the dmenu experience for now. 
+i can definitely tell how im just gonna add more stuff but i'll
+focus on smth else for now hahahahaha
+
+its funny because i was thinking of adding a script that could 
+toggle wayves cuz its been bugging me for a long while now and 
+ive always been finding ways on how to make it go away when there 
+is nothing playing in the bg. welp,, future project?
+
+
+UPDATE_8: waybar position toggle!
+  
+  yeahhhh one moreeeeee
+
+  this one changes waybar's position between top and bottom. Why?
+  cuz im an idiot :> 
+
+  i changed to a "hover to see" waybar setup where i need to 
+  hover my cursor over a specific area to make waybar appear 
+  itself. when i use the browser,, it gets uncomfortable 
+  when i try to manage my tabs or click on buttons that are 
+  at the top of the window because i would trigger waybar to 
+  show up which pushes down the window which then wont let me 
+  get to my tabs up top. reminds me of one of those "bad UI"
+  videos where there are bad designs made to make you mad.
+
+  i thought "wouldnt it be cool to have waybar down below instead 
+  of up top" so that when hover mode is toggled on, i can 
+  actually click stuff at the top of the window without fear of 
+  triggering waybar. so here it is.
+
+  lineup:
+
+  rofi/
+    +EDITED: waybar-menu.sh    //TOGGLE POSITION
+    waybar-menu.rasi
+    kitty-menu.sh 
+    kitty-menu.rasi
+    hypr-menu.sh
+    hypr-menu.rasi
+
+  hypr/
+    hypr-radius.sh 
+    hypr-blur.sh 
+    hypr-style.sh
+
+  kitty/
+    kitty-style.sh
+    kitty-cursor.sh 
+
+  waybar/
+    waybar-radius.sh
+    waybar-hover-toggle.sh
+    +ADDED: waybar-pos.sh     //toggles between
+                                top/bottom
+
+  waybar-pos.sh is used to toggle waybar's position between
+  "top" and "bottom" of the screen. essentially,, it needs to 
+  change/alter 2 files: waybar/config.jsonc and waybar-hover.
+  i declared 2 variables for the file paths ($WAYBAR_CONFIG
+  and $HOVER_SCRIPT). Did sanity checks to verify the files are
+  there and then used sed to put in the current position
+  ($CURRENT_POSITION). i used sed for this script since i need 
+  to alter lines that exist on singular lines and arent dependent
+  on anything else/easy-to-find keywords.
+
+  IF POS="TOP": 
+    - change position to "bottom" in WAYBAR_CONFIG
+    - change HOVER_Y to 1045 in HOVER_SCRIPT
+    - change < to > in comparison direction in HOVER_SCRIPT
+
+  IF POS="BOTTOM":
+    - change position to "top" in WAYBAR_CONFIG
+    - change HOVER_Y to 30 in HOVER_SCRIPT
+    - change > to < in comparison direction in HOVER_SCRIPT
+
+  These changes were made to make sure that when waybar is on 
+  hover mode,, the logic still works. without the changes made
+  in the hover script,, the result would have been weird. i would
+  need to move my mouse in the top part of my monitor while 
+  waybar would pop up from the bottom...you can guess the issue 
+  from there hahahhahah. another "Bad UI" instance. with the 
+  hover script logic changes wired into waybar-pos.sh,, the last 
+  line was executing reload.sh to apply changes instantly.
+
+okay this might just be the final one for now. yeah i still plan 
+to add ONE more but i dont think i'll do that right now. i wanna
+focus on updating my site.
+
+
+UPDATE_9: swayidle toggle (might ACTUALLY be the last...for now)
+  okay school is starting in 2 weeks so i kinda need to stop 
+  working on arch tweaks and start compiling/organizing my 
+  dotfiles fdjjshfkjhds 
+
+  this latest change adds another option into my hypr menu.
+
+  lineup:
+
+  rofi/
+    waybar-menu.sh
+    waybar-menu.rasi
+    kitty-menu.sh
+    kitty-menu.rasi
+    +EDITED: hypr-menu.sh             //TOGGLE SWAYIDLE
+    hypr-menu.rasi
+
+  hypr/
+    hypr-radius.sh 
+    hypr-blur.sh 
+    hypr-style.sh
+    +ADDED: hypr-idletoggle.sh        //toggles hypr-idle.sh
+
+  kitty/
+    kitty-style.sh
+    kitty-cursor.sh 
+
+  waybar/
+    waybar-radius.sh
+    waybar-hover-toggle.sh
+    waybar-pos.sh
+
+
+  hypr-idletoggle.sh was written to kill/launch hypr-idle.sh.
+  it initializes the swayidle.pid file into $PIDFILE and the 
+  hypr-idle.sh file into $IDLE. then theres a logic block that 
+  handles all the.. logic (im staying up here bear with me pls)
+
+  IF swayidle is running: 
+    kill it with the pid number contained in the pid file and 
+    then remove the pid file to complete the pid lock mech.
+
+  IF swayidle is NOT running:
+    enable hypr-idle.sh with the nohup command so that it keeps
+    running even when hypr-idletoggle.sh quits. this is the 
+    important part. nohup is used in my other scripts,, just 
+    didnt really talk about it. its use is actually crucial lol
+
+  OTHER:
+    hypr-idle.sh (previously in .config/swaylock/ for some reason)
+    is a file that runs on bootup and from hyprland.conf 
+    (exec-once). it saves the path to the swayidle pid file.
+    before continuing,, it runs a pid lock/check so only one 
+    instance gets launched. then there is a sanity check. once 
+    the checks are done,, pid gets parsed into the pid file and 
+    then have a trap command to remove the pid file on exit.
+    lastly, exec swayidle with set timeouts. this part determines
+    how long the timeout should be.
+
+ALRIGHT yeah i need to stop it here cuz there are other stuff 
+to do T^T
+
+this thread has been fun and i look forward to continuing this 
+later 
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+=====================[TERM + TOPIC GLOSSARY]====================
+////////////////////////////////////////////////////////////////
+
+hi! this journal has been getting pretty long so i'll add
+a glossary of some kind so that i can / or ctrl+f terms if i need
+a quick search. hope this benefits those who are reading this too.
+some terms are not yanked from my actual writings. they are denoted with this: [*]
+
+
+TERMS 
+----- 
+
+.aliasrc                        [Shell][Config]
+.bashrc                         [Shell][Config]
+.zshrc                          [Shell][Config]
+
+alias                           [Shell]
+[*]ANSI                         [UI][Shell]
+ASCII art                       [UI][Shell][Culture]
+autostart                       [WM][System]
+awk                             [Shell][Tool][Script]
+
+bash                            [Shell]
+Bibata                          [UI][System]
+btop                            [Tool][System]
+build                           [System][Build]
+[*]build-essential              [System][Build]
+
+cava                            [Audio][UI]
+CLI animation                   [UI][Shell][Culture]
+cmake                           [System][Build]
+config file                     [System]
+config.ron                      [Config][Audio]
+cursor                          [UI][Design]
+custom module                   [UI][WM]
+curl                            [Tool][Network]
+
+dmenu                           [UI][Tool]
+[*]dotfiles                     [System][Shell]
+
+eyed3                           [Audio][Tool]
+[*]exec                         [Shell][WM]
+
+[*]fc-cache                     [Font][System]
+FIFO                            [Audio][System]
+[*]font fallback                [Font][UI]
+[*]fontconfig                   [Font][System]
+fzf                             [Shell][Tool]
+
+gcc                             [System][Build]
+git                             [Tool][System]
+[*]glibc                        [System]
+glyph                           [Font][UI]
+group module                    [UI][WM]
+
+Hyprland                        [WM]
+Hyprlock                        [WM][Security]
+hyprpaper                       [UI][WM]
+hyprshot                        [Tool][UI][WM][Wayland]
+
+ID3                             [Audio][Metadata]
+IME                             [System][Input]
+input method                    [System][Input]
+
+Japanese input                  [System][Input]
+JetBrains Mono                  [Font][UI]
+jp2a                            [UI][Tool]
+
+kitty                           [Shell][UI]
+kitty.conf                      [Shell][Config]
+
+LazyVim                         [Tool][Shell]
+[*]libinput                     [System][Input]
+[*]locale                       [System][i18n]
+LRC                             [Audio][Metadata]
+
+[*]make                         [System][Build]
+mapscii                         [UI][CLI][Culture]
+matrix                          [UI][CLI][Culture]
+m3u                             [Audio]
+metadata                        [System]
+mpc                             [Audio][Tool]
+MPD                             [Audio][System]
+[*]MPD client                   [Audio][System]
+mpd.conf                        [Config][Audio]
+
+[*]named pipe                   [System][Audio]
+neofetch                        [UI][Shell][Culture]
+Neovim                          [Tool][Shell]
+Nerd Fonts                      [Font][UI]
+nmcli                           [System][Network]
+nohup                           [Shell][Tool][Script]
+
+Oh My Zsh                       [Shell][Framework]
+
+PCM                             [Audio][System]
+Process ID                      [System][Process]
+PID file guard                  [System][Design][Script]
+pipes                           [UI][CLI]
+PipeWire                        [Audio][System]
+PipeWire-Pulse                  [Audio][System]
+playlist                        [Audio]
+prompt                          [Shell][UI]
+pseudo workspace                [WM]
+[*]PulseAudio                   [Audio][System]
+
+ricing                          [UI][Culture]
+rofi                            [UI][Tool]
+rmpc                            [Audio][TUI]
+runtime configurability         [System][Design]
+
+scratchpad                      [WM]
+sed                             [Shell][Tool][Script]
+[*]sed -i                       [Shell][Tool][Script]
+[*]shebang                      [Shell][Script]
+shell prompt                    [Shell][UI]
+special workspace               [WM]
+swayidle                        [WM][System]
+swaylock                        [WM][Security]
+[*]systemd                      [System][Init]
+
+[*]terminal emulator            [Shell][UI]
+Thunar                          [Tool][UI]
+TUI                             [UI][Shell][Culture]
+[*]ttf-font                     [Font][System]
+
+[*]udev                         [System]
+
+[*]vim motions                  [Shell][Editor]
+
+Waybar                          [UI][WM]
+Wayland                         [WM][System]
+wf-recorder                     [Tool][System][Wayland]
+[*]widget                       [UI]
+[*]wl-clipboard                 [System][Wayland]
+wlogout                         [UI][WM]
+
+[*]xdg-user-dirs                [System]
+
+yazi                            [Tool][Shell]
+yt-x                            [Audio][Tool]
+
+zsh                             [Shell]
+
+
+They are tagged! Heres the key:
+
+---------------------------------------------------
+[Audio]       |  audio stack / music / playback   |
+---------------------------------------------------
+[Build]       |  compilation / build systems      |
+---------------------------------------------------
+[CLI]         |  command-line interfaces          |
+---------------------------------------------------
+[Config]      |  configuration files / formats    |
+---------------------------------------------------
+[Culture]     |  ricing / aesthetic practices     |
+---------------------------------------------------
+[Design]      |  architectural / design concepts  |
+---------------------------------------------------
+[Editor]      |  text editors / editing concepts  |
+---------------------------------------------------
+[Font]        |  fonts / icons / text rendering   |
+---------------------------------------------------
+[Framework]   |  shells / plugin frameworks       |
+---------------------------------------------------
+[Init]        |  init systems / service mgmt      |
+---------------------------------------------------
+[i18n]        |  localization / language support  |
+---------------------------------------------------
+[Input]       |  keyboards / mice / IME           |
+---------------------------------------------------
+[Metadata]    |  tags / song & file metadata      |
+---------------------------------------------------
+[Network]     |  networking / connectivity        |
+---------------------------------------------------
+[Package]     |  package managers                 |
+---------------------------------------------------
+[Process]     |  running programs / lifecycle     |
+---------------------------------------------------
+[Script]      |  scripting logic / execution      |
+---------------------------------------------------
+[Security]    |  locks / auth / system security   |
+---------------------------------------------------
+[Shell]       |  shells / terminal / scripting    |
+---------------------------------------------------
+[System]      |  OS internals / plumbing          |
+---------------------------------------------------
+[Tool]        |  standalone tools / apps          |
+---------------------------------------------------
+[TUI]         |  terminal-based interfaces        |
+---------------------------------------------------
+[UI]          |  interface / visuals / theming    |
+---------------------------------------------------
+[Wayland]     |  Wayland-specific components      |
+---------------------------------------------------
+[WM]          |  window manager / compositor      |
+---------------------------------------------------
+
+
+* DISCLAIMER: some of the things i listed arent part of the
+actual journal cuz some changes werent logged and others were
+learned while making changes. so heres a list of the stuff 
+that arent explicitly stated in my logs and why they are still
+in my glossary. 
+
+
+┌─[USED]───────────────────────────────────────────────────────┐
+└── i was doing/using this,, just didnt know what it was ──────┘
+================================================================
+dotfiles              | edited .zshrc, Hyprland config,        |
+                      | Waybar config repeatedly               |
+----------------------------------------------------------------
+exec                  | used via exec-once and script          |
+                      | execution logic                        |
+----------------------------------------------------------------
+terminal emulator     | kitty is central, but i always named   |
+                      | the app, not the category              |
+----------------------------------------------------------------
+sed -i                | edited files in-place, focused on      |
+                      | logic not the flag                     |
+----------------------------------------------------------------
+named pipe            | used FIFO explicitly, didnt call it    |
+                      | the generic term                       |
+----------------------------------------------------------------
+MPD client            | used rmpc / mpc, never named the       |
+                      | umbrella term                          |
+----------------------------------------------------------------
+PulseAudio            | reasoned about pipewire-pulse behavior |
+                      | without naming PA                      |
+----------------------------------------------------------------
+fontconfig            | font fixes relied on this implicitly   |
+----------------------------------------------------------------
+
+
+┌─[LEARNED BUT NOT LOGGED]─────────────────────────────────────┐
+└── i understand this now,, just never labeled it ─────────────┘
+================================================================
+shebang               | wrote runnable scripts correctly       |
+                      | without naming it                      |
+----------------------------------------------------------------
+vim motions           | used neovim/lazyvim fluently without   |
+                      | breaking it down conceptually          |
+----------------------------------------------------------------
+systemd               | avoided it, but understood its role    |
+                      | vs scripts and autostart               |
+----------------------------------------------------------------
+udev                  | device/input behavior discussed        |
+                      | without naming the subsystem           |
+----------------------------------------------------------------
+libinput              | input behavior understood, abstraction |
+                      | unnamed                                |
+----------------------------------------------------------------
+locale                | japanese input and i18n used without   |
+                      | naming locale mechanics                |
+----------------------------------------------------------------
+xdg-user-dirs         | directory structure assumed, never     |
+                      | discussed                              |
+----------------------------------------------------------------
+fc-cache              | font changes implied this command      |
+----------------------------------------------------------------
+font fallback         | reasoned about missing glyphs without  |
+                      | naming the concept                     |
+----------------------------------------------------------------
+ttf-font              | font format assumed, not discussed     |
+----------------------------------------------------------------
+wl-clipboard          | clipboard behavior assumed under       |
+                      | wayland                                |
+----------------------------------------------------------------
+widget                | consistently said “module” instead     |
+----------------------------------------------------------------
+
+
+┌─[FUTURE REFERENCE]───────────────────────────────────────────┐
+└── i havent gone true this yet,, but its the next step(s) ────┘
+================================================================
+build-essential       | needed when compiling native software  |
+----------------------------------------------------------------
+make                  | build automation once i stopped        |
+                      | relying on packages                    |
+----------------------------------------------------------------
+glibc                 | relevant when debugging low-level      |
+                      | binaries or builds                     |
+----------------------------------------------------------------
+ANSI                  | raw escape codes behind cli visuals    |
+----------------------------------------------------------------
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+--------------------------------------------------------------
+//////////////////////////////////////////////////////////////
+
+
+SCOPE
+----- 
+
+Icons / Fonts         → Bibata, glyphs, Nerd Fonts, JetBrains Mono
+
+Visualizers           → CAVA, FIFO, PCM
+
+Menus / UI            → Waybar, Rofi, Dmenu, Kitty-menu, Hypr-menu
+
+Automation / Scripts  → Autostart, Exec, Shell scripts, 
+                        Kitty-style.sh, Hypr-style.sh, 
+                        Hypr-blur.sh, Kitty-cursor.sh, 
+                        sed, awk, PID locking / PID file guard
+                        nohup
+
+Media stack           → PipeWire, MPD, RMPC, MPC, ID3, eyeD3,
+                        hyprshot, wf-recorder
+
+Windowing / WM        → Hyprland, Wayland, Scratchpad, Wlogout,
+                        Swaylock, Swayidle, hyprpaper, hyprshot
+
+File managers         → Thunar, Yazi
+
+Text editors          → Neovim, LazyVim
+
+Shell / CLI           → OhMyZsh, Zsh, Bash, Aliases, CLI animation
+
+Configuration         → Kitty config, Hyprland config, .bashrc, 
+                        .zshrc, MPD.conf, config.ron
+
+Culture / Ricing      → Ascii art, Cube-ascii, CLI animation,
+                        Themes
+
+TUI / Apps            → YT-X, Btop, wf-recorder
+
+Networking            → NMCLI, Wifi
+
+Systems / Internals   → Process ID, PID locking / PID file guard
+

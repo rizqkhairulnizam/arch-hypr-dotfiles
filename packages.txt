@@ -1,0 +1,21 @@
+# Required Packages (V1)
+
+These packages are required for the dotfiles in this repository to work as intended.
+
+## GTK
+- adw-gtk3
+- adwaita-icon-theme
+- bibata-cursor-theme
+
+## Fonts
+- Adwaita Sans
+- JetBrains Mono
+
+## Core
+- hyprland
+- waybar
+- kitty
+- rofi
+
+* other needed packages are listed in REQUIRED.md of each core directory.
+
