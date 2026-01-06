@@ -19,6 +19,13 @@ This update to the repo introduces menus that act as added features to what v1 i
 
 I treat my custom dmenu configs as a side project since there were a lot more moving parts than I initially expected. Because of that, refer to [CUSTOM-DMENU.md](dotfiles/rofi/CUSTOM-DMENU.md) for an extensive view on what it actually is.
 
+## V3
+a lot of TBA stuff BUT things i have in mind:
+- yazi
+- ly
+- wlogout
+- swaylock
+
 ## CREDITS!
 This little hobby of mine materialized really well due to the resources I found online. I learnt a lot while ricing my setup and these are the peeps that made it possible! 
 
